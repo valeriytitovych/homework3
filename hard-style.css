@@ -1,0 +1,85 @@
+/* RESET Styles */
+body, p {
+    margin: 0;
+}
+
+/* BASE */
+* {
+    box-sizing: border-box;
+} 
+
+html, body {
+    height: 100%;
+    background-color: #990909;
+}
+
+header {
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #e95b11;
+    text-align: center;
+    color: #ffffff;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+#pic-block{
+    background-color: #000000;
+    padding: 0.5em;
+}
+
+figure {
+    display: inline-block;
+    width: 100%;  
+}
+
+.pic figcaption{
+    text-align: center;
+    color: #ffffff;
+}
+
+.pic{
+    width: 120px;
+    height: 90px;
+}
+
+div#tableContainer {
+	display: table;	
+}
+
+div#tableRow {
+	display: table-row;
+}
+
+section#left-side {
+    display: table-cell;
+    background-color: #7d0909;
+    width: 20%;
+    padding: 15px;
+    vertical-align: top;
+    margin: 10px;
+}
+
+section#left-side, section#centerside, section#right-side {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.left-side-text {
+    line-height:      2em;
+    color: #e95b11;
+}
