@@ -9,24 +9,24 @@ body, p {
 } 
 
 html, body {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     background-color: #990909;
+    margin: 0;
 }
 
 header {
     text-align: center;
-}
-
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 footer {
     background-color: #e95b11;
     text-align: center;
     color: #ffffff;
+    margin: 0px 5px 10px 10px;
 }
 
 .content {
@@ -37,14 +37,15 @@ footer {
     flex-shrink: 0;
 }
 
-#pic-block{
+.pic-block{
     background-color: #000000;
     padding: 0.5em;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 figure {
-    display: inline-block;
-    width: 100%;  
+    display: inline-block;    
 }
 
 .pic figcaption{
@@ -65,21 +66,46 @@ div#tableRow {
 	display: table-row;
 }
 
-section#left-side {
+section.left-side, section.center-side, section.right-side {
     display: table-cell;
-    background-color: #7d0909;
-    width: 20%;
-    padding: 15px;
     vertical-align: top;
-    margin: 10px;
+    padding: 15px;
 }
 
-section#left-side, section#centerside, section#right-side {
-    display: table-cell;
-    vertical-align: top;
+.left-side {    
+    background-color: #7d0909;
+    width: 21%;    
+    margin-left: 10px;
 }
+
 
 .left-side-text {
     line-height:      2em;
     color: #e95b11;
+    text-decoration: underline #e95b11;
+}
+
+.center-side {       
+    width: 61%;   
+}
+
+.center-side-text {
+    color: #ffffff;
+    margin-top: 21px;
+    margin-bottom: 21px;   
+}
+
+.right-side {        
+    width: 16%;
+    background-color: #dddde3;
+    margin-right: 10px;    
+}
+
+hr {
+    width: 76px;
+}
+
+.right-side>header {
+    background-color: #bdbdbd;
+    margin-top: 0;
 }
