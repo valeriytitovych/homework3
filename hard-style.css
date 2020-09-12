@@ -116,8 +116,10 @@ hr {
     margin-bottom: 21px;
 }
 
-.right-side>header {
+.right-side-title {
     background-color: #bdbdbd;
-    margin-top: 0;
+    height: 25px;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
